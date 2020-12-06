@@ -1,0 +1,859 @@
+@charset "UTF-8";
+/* CSS Document */
+/*media (max-width: 1000px) and (min-width: 726px)
+Phones: 320 - 767
+Tablets: 768 - 1023
+Desktop: 1024+ */
+
+/****** Desktop ******/
+@media (min-width: 1024px){
+
+/****** THEME  ******/
+body {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+	
+/*** TOP NAV ***/
+header {
+	position: relative;
+  	overflow: hidden;
+	background: #263931;
+	height: 20vh;
+	top: 0;	
+	z-index: 100;
+	width: 100%;
+	}
+#logo {
+	position: relative;
+	float: center;
+  	transform: translate(-50%, -50%);
+	font-family: 'Homemade Apple', cursive;
+	color: #D9CAC5;
+	font-style: italic;
+    text-shadow: -5px 2px 20px #ced0d3;
+    animation: glow 1.5s ease-in-out infinite alternate;
+    text-align: center;
+	background-image: url("images/logoedited.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	clear: both;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	font-size: 6vh;
+	}
+ @keyframes glow {
+    from {color: #D9CAC5;}
+    to {color: #FAF8E4;}
+  }
+nav ul {
+	list-style-type: none;
+	float: left;
+	margin-top: -15.5vh;
+	margin-left: -3vw;
+	}
+nav ul li {
+	display: inline;
+	text-transform: lowercase;
+	font-size: 3vh;
+	padding: .5vw;
+	}
+nav ul a {
+	text-decoration: none;
+	color: #FAF8E4;
+	}
+nav ul a:hover {
+	color: #BF8A7E;
+	font-style: italic;
+	}
+input[type=checkbox], nav a.hidden {
+	display: none;
+	}
+	
+/* TOP NAV RIGHT */
+.topnav-right {
+  	float: right;
+	margin-right: 2.75vw;
+	margin-top: -20vh;
+	}
+.topnav-right ul {
+	list-style-type: none;
+}
+.topnav-right ul li {
+	display: inline;		
+	}
+.fas {
+	padding: 1vw;
+  	font-size: 1.5vw;
+  	text-decoration: none;
+	color: #FAF8E4;
+	}
+.fas:hover {
+	color: #BF8A7E;
+}	
+
+	
+/*** HERO NAVIGATION ***/
+.container {
+	display: flex;
+	height: 80vh;
+	position: relative;
+	}
+.section {
+  	flex: 1;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100%;
+  	overflow: hidden;
+  	background-size: cover;
+  	background-position: center;
+  	color: #fff;
+  	transition: flex .4s ease;
+  	position: relative;
+	font-family: 'Federo', sans-serif;
+}
+.section a {
+	text-transform: uppercase;
+	color: #D9CAC5;
+	text-decoration: none;
+	transition: all 0.3s;
+	font-size: 6vw;
+	position: relative;
+	}
+.section a:hover {
+	color: #BF8A7E;
+	}
+.section .overlay {
+  	background-color: rgba(0, 0, 0, 0.6);
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	transition: background-color .8s ease;
+}
+.section .content {
+  	z-index: 2;
+}
+.section:hover {
+  	flex: 2;
+}
+.section:hover .overlay {
+  	background-color: rgba(0,0,0,0);
+}
+#about {
+	background-image: url("images/car1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#home {
+	background-image: url("images/car4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#contact {
+	background-image: url("images/car3.jpg");
+	background-repeat: no-repeat;
+	background0position: center;
+	}
+.container .fas {
+	position: absolute;
+	left: 47%;
+	bottom: 1em;
+	font-size: 2.5em;
+	color: #D9CAC5;
+	}
+.container .fas:hover {
+	color: #BF8A7E;
+	}
+	
+
+/*** FOOTER ***/
+footer {
+	font-size: .7rem;
+	bottom: 0;
+	clear: both;
+	text-align: center;
+	background: #263931;
+	padding: 1.4rem;
+	margin-top: 3em;
+	}
+footer p {
+	color: #FAF8E4;
+	}
+.fab {
+	padding: .5em;
+  	font-size: 2em;
+  	width: .5em;
+	height: .5em;
+  	text-align: center;
+  	text-decoration: none;
+	color: #FAF8E4;
+}	
+.fab:hover {
+	color: #BF8A7E;
+}	
+
+/***** INDIVIDUAL PAGE CSS *****/ 
+/*** LATEST & GREATEST ***/
+h2 {
+	font-family: 'Homemade Apple', cursive;
+	text-transform: lowercase;
+	color: #263931;
+	text-align: left;
+	}
+.latest {
+	padding: 4%;
+    display: inline-block;
+    background-color: #ffffff;
+	}
+.thumbnail {
+	margin: 1%;
+	padding: 1%;
+	width: 21%;
+	text-align: center;
+	float: left;
+	border-radius: 5%;
+	border-bottom: .25em solid #D9CAC5;
+	border-top: .25em solid #D9CAC5;
+	background-color: #F8F8F8;
+	transition: all 0.3s linear;
+}
+.thumbnail:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.thumbnail h4 {
+	color: #895449;
+	text-align: center;
+	display: inline-block;
+    min-width: 1rem;
+	font-family: 'Homemade Apple', cursive;
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+}
+.latest p {
+	text-align: left;
+	}
+.shopall {
+	display: inline-block;
+	float: center;
+	}
+.shopall p {
+	font-family: 'Raleway', sans-serif;	
+	text-align: center;
+	}
+.shopall a {
+	text-decoration: none;
+	color: #895449;
+	font-weight: bold;
+	font-family: 'Homemade Apple', cursive;
+	font-size: 3vh;
+	padding: 1vh;
+	}
+.shopall a:hover {
+	color: #BF8A7E;
+	}
+	
+/*** ABOUT ***/
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1em;
+	position: relative;
+}
+.flex story {
+	flex-basic: 50%;
+	padding: 5em;
+}
+.flex founders {
+	flex-basic: 50%;
+	padding: 5em;
+}	
+.founders img {
+	width: 45vw;
+	}
+	
+}
+
+
+/****** Tablets ******/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+body {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+/*** TOP NAV ***/
+header {
+	position: relative;
+  	overflow: hidden;
+	background: #263931;
+	height: 20vh;
+	top: 0;	
+	z-index: 100;
+	width: 100%;
+	}
+#logo {
+	position: relative;
+	float: center;
+  	transform: translate(-50%, -50%);
+	font-family: 'Homemade Apple', cursive;
+	color: #D9CAC5;
+	font-style: italic;
+    text-shadow: -5px 2px 20px #ced0d3;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+	background-image: url("images/logoedited.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	clear: both;
+	background-position: center;
+	width: 100%;
+	height: 80%;
+	text-decoration: none;
+	font-size: 6vh;
+	}
+ @keyframes glow {
+    from {color: #D9CAC5;}
+    to {color: #FAF8E4;}
+  }
+nav ul {
+	list-style-type: none;
+	float: left;
+	margin-top: -15.5vh;
+	margin-left: -3vw;
+	}
+nav ul li {
+	display: inline;
+	text-transform: lowercase;
+	font-size: 3vh;
+	padding: .5vw;
+	}
+nav ul a {
+	text-decoration: none;
+	color: #FAF8E4;
+	}
+nav ul a:hover {
+	color: #BF8A7E;
+	font-style: italic;
+	}
+input[type=checkbox], nav a.hidden {
+	display: none;
+	}
+	
+/* TOP NAV RIGHT */
+.topnav-right {
+  	float: right;
+	margin-right: 3vw;
+	margin-top: -20vh;
+	display: block;
+	list-style: none;
+}
+.topnav-right ul {
+	list-style-type: none;
+}
+.topnav-right ul li {
+	display: inline;		
+	}
+.fas {
+	padding: 1vw;
+  	font-size: 1.75vw;
+  	text-decoration: none;
+	color: #FAF8E4;
+	}
+.fas:hover {
+	color: #BF8A7E;
+}	
+
+	
+/*** MAIN NAVIGATION ***/
+.container {
+	display: flex;
+	height: 80vh;
+	position: relative;
+	}
+.section {
+  	flex: 1;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100%;
+  	overflow: hidden;
+  	background-size: cover;
+  	background-position: center;
+  	color: #fff;
+  	transition: flex .4s ease;
+  	position: relative;
+	font-family: 'Federo', sans-serif;
+}
+.section a {
+	text-transform: uppercase;
+	color: #D9CAC5;
+	text-decoration: none;
+	transition: all 0.3s;
+	font-size: 6vw;
+	position: relative;
+	}
+.section a:hover {
+	color: #BF8A7E;
+	}
+.section .overlay {
+  	background-color: rgba(0, 0, 0, 0.6);
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	transition: background-color .8s ease;
+}
+.section .content {
+  	z-index: 2;
+}
+.section:hover {
+  	flex: 2;
+}
+.section:hover .overlay {
+  	background-color: rgba(0, 0, 0, 0.1);
+}
+#about {
+	background-image: url("images/car1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#home {
+	background-image: url("images/car4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#contact {
+	background-image: url("images/car3.jpg");
+	background-repeat: no-repeat;
+	background0position: center;
+	}
+.container .fas {
+	position: absolute;
+	left: 47%;
+	bottom: 1em;
+	font-size: 2.5em;
+	color: #D9CAC5;
+	}
+.container .fas:hover {
+	color: #BF8A7E;
+	}
+	
+
+/*** FOOTER ***/
+footer {
+	font-size: .7rem;
+	bottom: 0;
+	clear: both;
+	text-align: center;
+	background: #263931;
+	padding: 1.4rem;
+	margin-top: 3em;
+	}
+footer p {
+	color: #FAF8E4;
+	}
+.fab {
+	padding: .5em;
+  	font-size: 2em;
+  	width: .5em;
+	height: .5em;
+  	text-align: center;
+  	text-decoration: none;
+	color: #FAF8E4;
+}	
+.fab:hover {
+	color: #BF8A7E;
+}	
+	
+	
+/*** INDIVIDUAL PAGE CSS  ***/ 
+/* LATEST & GREATEST */
+h2 {
+	font-family: 'Homemade Apple', cursive;
+	text-transform: lowercase;
+	color: #263931;
+	text-align: left;
+	}
+.latest {
+	padding: 3%;
+    display: inline-block;
+    background-color: #ffffff;
+	}
+.thumbnail {
+	margin: 1%;
+	padding: 1%;
+	width: 21%;
+	text-align: center;
+	float: left;
+	border-radius: 5%;
+	border-bottom: .25em solid #D9CAC5;
+	border-top: .25em solid #D9CAC5;
+	background-color: #F8F8F8;
+	transition: all 0.3s linear;
+}
+.thumbnail:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+.thumbnail h4 {
+	color: #895449;
+	text-align: center;
+    min-width: 1rem;
+	font-family: 'Homemade Apple', cursive;
+	text-transform: lowercase;
+	font-weight: bold;
+	height: 3vh;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+}
+.latest p {
+	text-align: left;
+	}
+.shopall {
+	display: inline-block;
+	float: center;
+	}
+.shopall p {
+	font-family: 'Raleway', sans-serif;	
+	text-align: center;
+	}
+.shopall a {
+	text-decoration: none;
+	color: #895449;
+	font-weight: bold;
+	font-family: 'Homemade Apple', cursive;
+	font-size: 3vh;
+	padding: 1vh;
+	}
+.shopall a:hover {
+	color: #BF8A7E;
+	}
+}
+
+
+/****** Mobile******/
+@media (min-width: 320px) and (max-width: 767px) {
+
+body {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+/*** TOP NAV ***/
+header {
+	position: absolute;
+	background: #263931;
+	height: 15vh;
+	top: 0;	
+	z-index: 100;
+	width: 100%;
+	}
+#hamburger {
+	display: flex;
+  	flex-direction: column;
+  	position: relative;
+  	top: -10vh;
+  	left: 5vw;
+  	z-index: 1;
+  	-webkit-user-select: none;
+  	user-select: none;
+}
+#hamburger input {
+  	display: flex;
+  	width: 2em;
+  	height: 2em;
+  	position: absolute;
+  	cursor: pointer;
+  	opacity: 0;
+  	z-index: 2;
+}
+#hamburger span {
+  	display: flex;
+  	width: 2.25em;
+  	height: .2em;
+  	margin-bottom: .5em;
+  	position: relative;
+  	background: #F8F8F8;
+  	border-radius: 15%;
+  	z-index: 1;
+  	transform-origin: .15em .15em;
+  	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+#hamburger span:first-child{
+  	transform-origin: 0% 0%;
+}
+#hamburger span:nth-last-child(2){
+  	transform-origin: 0% 100%;
+}
+#hamburger input:checked ~ span{
+  	opacity: 1;
+  	transform: rotate(45deg) translate(-3px, -1px);
+	color: #BF8A7E;
+}
+#hamburger input:checked ~ span:nth-last-child(3){
+  	opacity: 0;
+  	transform: rotate(0deg) scale(0.2, 0.2);
+}
+#hamburger input:checked ~ span:nth-last-child(2){
+  	transform: rotate(-45deg) translate(0, -1px);
+}
+#hamburger input:checked ~ ul{
+  	transform: none;
+}
+#logo {
+	position: relative;
+	float: center;
+  	transform: translate(-50%, -50%);
+	font-family: 'Homemade Apple', cursive;
+	color: #D9CAC5;
+	font-style: italic;
+    text-shadow: -5px 2px 20px #ced0d3;
+    animation: glow 2s ease-in-out infinite alternate;
+    text-align: center;
+	background-image: url("images/logoedited.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	clear: both;
+	background-position: center;
+	width: 100%;
+	height: 80%;
+	text-decoration: none;
+	font-size: 4vh;
+	}
+ @keyframes glow {
+    from {color: #D9CAC5;}
+    to {color: #FAF8E4;}
+  }
+nav ul {
+	list-style-type: none;
+	float: left;
+	position: absolute;
+  	width: 100vw;
+	text-align: center;	
+	padding: 2.5vh;
+	margin-top: 9.9vh;
+	margin-left: -5vw;
+  	background-color: #263931;
+  	-webkit-font-smoothing: antialiased;
+  	transform: translateY(-43vh);
+  	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+nav ul li {
+	transition-delay: 2s;
+	padding: 1vh 0;
+	margin-left: -10vw;
+	}
+nav ul a {
+	text-decoration: none;
+	color: #FAF8E4;
+	font-weight: bold;
+	font-size: 2.5vh;
+	}
+/* TOP NAV RIGHT */
+.topnav-right {
+  	float: right;
+	margin-right: 2.75vw;
+	margin-top: -21vh;
+	display: block;
+	list-style: none;
+}
+.topnav-right ul {
+	list-style-type: none;
+}
+.topnav-right ul li {
+	display: block;		
+	}
+.fas {
+	padding: 1vw;
+  	font-size: 3vw;
+  	text-decoration: none;
+	color: #FAF8E4;
+	}
+.fas fa-search, .fas fa-user-circle {
+	display: none;	
+	}
+
+	
+/*** MAIN NAVIGATION ***/
+.container {
+	display: flex;
+	height: 85vh;
+	position: relative;
+	width: 100%;
+	}
+.section {
+  	flex: 1;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	height: 100%;
+  	overflow: hidden;
+  	background-size: cover;
+  	background-position: center;
+  	color: #fff;
+  	transition: flex .4s ease;
+  	position: relative;
+	font-family: 'Federo', sans-serif;
+}
+.section a {
+	text-transform: uppercase;
+	color: #D9CAC5;
+	text-decoration: none;
+	transition: all 0.3s;
+	font-size: 6vw;
+	position: relative;
+	}
+.section a:hover {
+	color: #BF8A7E;
+	}
+.section .overlay {
+  	background-color: rgba(0, 0, 0, 0.6);
+  	width: 100%;
+  	height: 100%;
+  	position: absolute;
+  	transition: background-color .8s ease;
+}
+.section .content {
+  	z-index: 2;
+}
+.section:hover {
+  	flex: 2;
+}
+
+#about {
+	background-image: url("images/car1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#home {
+	background-image: url("images/car4.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	}
+#contact {
+	background-image: url("images/car3.jpg");
+	background-repeat: no-repeat;
+	background0position: center;
+	}
+.container .fas {
+	position: absolute;
+	left: 47%;
+	bottom: 1em;
+	font-size: 2.5em;
+	color: #D9CAC5;
+	}
+.container .fas:hover {
+	color: #BF8A7E;
+	}
+
+/*** FOOTER ***/
+footer {
+	font-size: .7rem;
+	bottom: 0;
+	clear: both;
+	text-align: center;
+	background: #263931;
+	padding: 1.4rem;
+	margin-top: 3em;
+	}
+footer p {
+	color: #FAF8E4;
+	}
+.fab {
+	padding: .5em;
+  	font-size: 2em;
+  	width: .5em;
+	height: .5em;
+  	text-align: center;
+  	text-decoration: none;
+	color: #FAF8E4;
+}	
+	
+	
+/*** INDIVIDUAL PAGE CSS  ***/ 
+/* LATEST & GREATEST */
+h2 {
+	font-family: 'Homemade Apple', cursive;
+	text-transform: lowercase;
+	color: #263931;
+	text-align: left;
+	}
+.latest {
+	padding: 4%;
+    display: inline-block;
+    background-color: #ffffff;
+	}
+.thumbnail {
+	margin: 2%;
+	padding: 1%;
+	width: 44%;
+	text-align: center;
+	float: left;
+	border-radius: 5%;
+	border-bottom: .25em solid #D9CAC5;
+	border-top: .25em solid #D9CAC5;
+	background-color: #F8F8F8;
+	transition: all 0.3s linear;
+}
+.thumbnail h4 {
+	color: #895449;
+	text-align: center;
+	display: inline-block;
+    min-width: 1rem;
+	font-family: 'Homemade Apple', cursive;
+	text-transform: lowercase;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.cards {
+	width: 100%;
+	height: auto;
+	border-top-left-radius: 5%;
+	border-top-right-radius: 5%;
+}
+.latest p {
+	text-align: left;
+	}
+.shopall {
+	display: inline-block;
+	float: center;
+	}
+.shopall p {
+	font-family: 'Raleway', sans-serif;	
+	text-align: left;
+	}
+.shopall a {
+	text-decoration: none;
+	color: #895449;
+	font-weight: bold;
+	font-family: 'Homemade Apple', cursive;
+	font-size: 1.2em;
+	padding: .4em;
+	}
+
+}
+
+
+

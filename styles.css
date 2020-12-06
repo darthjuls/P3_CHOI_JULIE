@@ -179,7 +179,6 @@ footer {
 	text-align: center;
 	background: #263931;
 	padding: 1.4rem;
-	margin-top: 3em;
 	}
 footer p {
 	color: #FAF8E4;
@@ -203,15 +202,15 @@ h2 {
 	font-family: 'Homemade Apple', cursive;
 	text-transform: lowercase;
 	color: #263931;
-	text-align: left;
+	text-align: center;
 	}
 .latest {
-	padding: 4%;
+	padding: 3%;
     display: inline-block;
     background-color: #ffffff;
 	}
 .thumbnail {
-	margin: 1%;
+	margin: 1vh;
 	padding: 1%;
 	width: 21%;
 	text-align: center;
@@ -242,12 +241,10 @@ h2 {
 	border-top-left-radius: 5%;
 	border-top-right-radius: 5%;
 }
-.latest p {
-	text-align: left;
-	}
 .shopall {
 	display: inline-block;
 	float: center;
+	padding-top: 1
 	}
 .shopall p {
 	font-family: 'Raleway', sans-serif;	
@@ -264,18 +261,27 @@ h2 {
 .shopall a:hover {
 	color: #BF8A7E;
 	}
+
 	
 /*** ABOUT ***/
 .grid-container {
   	display: inline-grid;
 	grid-template-columns: auto auto;
+	padding: 1.5em;
+	border: .75em solid #D9CAC5;
 	}
 .story {
-	padding: 1vw;
+	padding: 3vw;
 	}
-.founders img {
-	width: 45vw;
-	padding: 1vw;
+.story h2 {
+	text-align: center;	
+	}
+.story p {
+	text-align: justify;
+	}
+.founders img{
+	width: 40vw;
+	padding: 2vw;
 	}	
 }
 

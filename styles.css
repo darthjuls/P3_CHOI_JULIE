@@ -266,25 +266,17 @@ h2 {
 	}
 	
 /*** ABOUT ***/
-.flex {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 1em;
-	position: relative;
-}
-.flex story {
-	flex-basic: 50%;
-	padding: 5em;
-}
-.flex founders {
-	flex-basic: 50%;
-	padding: 5em;
-}	
+.grid-container {
+  	display: inline-grid;
+	grid-template-columns: auto auto;
+	}
+.story {
+	padding: 1vw;
+	}
 .founders img {
 	width: 45vw;
-	}
-	
+	padding: 1vw;
+	}	
 }
 
 

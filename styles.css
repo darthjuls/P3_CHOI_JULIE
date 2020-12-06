@@ -194,16 +194,26 @@ footer p {
 }	
 .fab:hover {
 	color: #BF8A7E;
-}	
+}
 
-/***** INDIVIDUAL PAGE CSS *****/ 
-/*** LATEST & GREATEST ***/
+/***** CONTENT THEME FOR INDIVIDUAL PAGE *****/ 
 h2 {
 	font-family: 'Homemade Apple', cursive;
 	text-transform: lowercase;
 	color: #263931;
 	text-align: center;
+	}	
+.latest .fas, .grid-container .fas {
+	position: sticky;
+	float: center;
+	font-size: 2.5em;
+	color: #D9CAC5;
 	}
+.latest .fas:hover, .grid-container .fas:hover {
+	color: #BF8A7E;
+	}
+	
+/*** LATEST & GREATEST ***/
 .latest {
 	padding: 3%;
     display: inline-block;
@@ -279,6 +289,14 @@ h2 {
 	}
 .story p {
 	text-align: justify;
+	}
+.story a {
+	text-decoration: none;
+	color: #895449;
+	font-weight: bold;
+	}
+.story a:hover {
+	color: #BF8A7E;
 	}
 .founders img{
 	width: 40vw;

@@ -95,6 +95,56 @@ input[type=checkbox], nav a.hidden {
 .fas:hover {
 	color: #BF8A7E;
 }	
+/* The popup form - hidden by default */
+.form-popup {
+  	display: none;
+  	position: fixed;
+  	border: .1em solid #D9CAC5;
+	right: 1em;
+	border-radius: 5%;
+}
+/* Add styles to the form container */
+.form-container {
+  	max-width: 25vw;
+  	padding: 1em;
+  	background-color: #F8F8F8;
+	border-radius: 5%;
+}
+/* Full-width input fields */
+.form-container input[type=text] {
+  	width: 100%;
+  	padding: .75em;
+	margin-left: -.05em;
+    border: .1em solid #D9CAC5;
+	margin-bottom: 1em;
+}
+.form-container input[type=password] {
+	width: 92%;
+	padding: .75em;
+	margin-bottom: 1em;
+	border: .1em solid #D9CAC5;
+	}
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  	background-color: #F8F8F8;
+  	outline: none;
+}
+/* Set a style for the submit/login button */
+.form-container .btn {
+  	background: #895449;
+  	color: #F8F8F8;
+  	padding: 1em;
+  	border: none;
+  	cursor: pointer;
+  	width: 100%;
+  	margin-bottom: 1em;
+  	opacity: 0.8;
+}
+.form-container .cancel {
+  background-color: #263931;
+}
+.form-container .btn:hover {
+  opacity: 1;
+}
 
 	
 /*** HERO NAVIGATION ***/
@@ -317,8 +367,12 @@ h2 {
 	
 /**** CONTACT *****/
 .map {
-  	padding: 2vw;
-	margin: 2vw;
+  	padding: 1vw;
+	margin: 1vw;
+	}
+iframe {
+	width: 40vw;
+	height: 50vh;
 	}
 .contactform {
 	border-radius: 5%;
@@ -362,13 +416,17 @@ input[type=submit]:hover {
 address {
 	display: block;
 	}
+.map a {
+	text-decoration: none;
+	color: #895449;
+	}
 .map .fas {
 	position: sticky;
 	float: center;
 	font-size: 1em;
 	color: #D9CAC5;
 	}
-.map .fas:hover {
+.map a:hover {
 	color: #BF8A7E;
 	}
 }

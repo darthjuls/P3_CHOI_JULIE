@@ -65,11 +65,50 @@
 		<div id="grid-container" class="grid-container">
 			<div id="map" class="map">
 				<h2>Our Studio</h2>
-				<iframe width="600" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/view?zoom=17&center=34.0037,-118.4344&key=..." allowfullscreen></iframe>
+				<address class="adr">
+					<i class="fas fa-map-marker-alt"></i>
+					<span class="street-address">9552 Washington Blvd</span>
+					<br>
+					<span class="locality">Los Angeles</span>, 
+					<abbr class="region" title="California">CA</abbr>
+					<span class="postal-code">90232</span>
+					<br>
+					<span class="tel">310.999.9999</span>  
+					<br>
+					<a class="email" href="anodetoyou@gmail.com">anodetoyou@gmail.com</a>
+				</address>
+				<br>
+				<iframe width="450" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=9552%20washington%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://embedgooglemap.net/137/"></a>
 			</div>
-			<div class="con-form">
-				<h2>Talk to us</h2>
+			<div class="contactform">
+				<form action="/action_page.php">
+					<h2><legend>Talk to us</legend></h2>
+					<label for="fname">First Name:</label>
+					<br>
+					<input type="text" id="fname" name="fname">
+					<br>
+					<label for="lname">Last Name:</label>
+					<br>
+					<input type="text" id="lname" name="lname">
+					<br>
+					<label for="email">Email:</label>
+					<br>
+					<input type="text" id="email" name="email">
+					<br>
+					<label for="reason">Reasons for Contacting:</label>
+					<br>
+					<select name="reason" id="reason">
+  						<option value="question">I have a question</option>
+  						<option value="quote">I'd like a quote</option>
+  						<option value="collaborate">I'd like to collaborate</option>
+					</select>
+					<br>
+					<label class="label-width" for="message">Message:</label>
+					<br>
+					<textarea name="message" id="message"></textarea>
+					<br>
+    				<input type="submit" value="Submit">
+  				</form>
 			</div>
 			<a href="index.html" class="float">
 			<i class="fas fa-angle-double-up"></i>

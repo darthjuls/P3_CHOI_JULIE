@@ -31,9 +31,33 @@
 			</nav>
 				<div class="topnav-right">
 					<ul>
-					<li><a href="search.html" class="fas fa-search"></a></li>
-					<li><a href="account.html" class="fas fa-user-circle"></a></li>
-					<li><a href="cart.html" class="fas fa-shopping-cart"></a></li>
+					<li><a class="fas fa-search" onclick="openSearch()"></a></li>
+						<div class="search-popup" id="mySearch">
+						  	<form action="/action_page.php" class="form-container">
+    							<h2>Search the site</h2>
+							 </form>
+						</div>	
+					<li><i class="fas fa-user-circle" onclick="openForm()"></i></li>
+						<div class="form-popup" id="myForm">
+  							<form action="/action_page.php" class="form-container">
+    							<h2>Login</h2>
+								<label for="email"><b>Email:</b></label>
+    							<input type="text" placeholder="Enter Email" name="email" required>
+    							<label for="psw"><b>Password:</b></label>
+    							<input type="password" placeholder="Enter Password" name="psw" required>
+    							<button type="submit" class="btn">Login</button>
+    							<button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+  							</form>
+						</div>
+					<li><i class="fas fa-shopping-cart" onclick="openCart()"></i></li>
+						<div class="cart-popup" id="myCart">
+						  	<form action="/action_page.php" class="form-container">
+    							<h2>Shopping Bag</h2>
+								<p>Your bag is currently empty! </p>
+    							<button type="checkout" class="btn">Checkout</button>
+    							<button type="button" class="btn cancel" onclick="closeCart()">Cancel</button>
+  							</form>
+						</div>
 					</ul>
 				</div>
 		</header>

@@ -95,22 +95,19 @@ input[type=checkbox], nav a.hidden {
 .fas:hover {
 	color: #BF8A7E;
 }	
-/* The popup form - hidden by default */
-.form-popup {
+.form-popup, .cart-popup, .search-popup {
   	display: none;
   	position: fixed;
   	border: .1em solid #D9CAC5;
 	right: 1em;
 	border-radius: 5%;
 }
-/* Add styles to the form container */
 .form-container {
   	max-width: 25vw;
   	padding: 1em;
   	background-color: #F8F8F8;
 	border-radius: 5%;
 }
-/* Full-width input fields */
 .form-container input[type=text] {
   	width: 100%;
   	padding: .75em;
@@ -128,7 +125,6 @@ input[type=checkbox], nav a.hidden {
   	background-color: #F8F8F8;
   	outline: none;
 }
-/* Set a style for the submit/login button */
 .form-container .btn {
   	background: #895449;
   	color: #F8F8F8;

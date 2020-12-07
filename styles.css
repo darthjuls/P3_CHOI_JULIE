@@ -329,7 +329,7 @@ h2 {
 	}
 form {
 	text-align: left;
-	width 40vw;
+	width: 40vw;
 	}
 form p {
 	padding-left: 3em;
@@ -359,8 +359,17 @@ textarea {
 input[type=submit]:hover {
  	background: #BF8A7E;
 }
-adress {
-	text-align: left;
+address {
+	display: block;
+	}
+.map .fas {
+	position: sticky;
+	float: center;
+	font-size: 1em;
+	color: #D9CAC5;
+	}
+.map .fas:hover {
+	color: #BF8A7E;
 	}
 }
 
